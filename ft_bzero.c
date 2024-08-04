@@ -1,49 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/04 09:23:44 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/04 10:52:21 by codespace        ###   ########.fr       */
+/*   Created: 2024/08/04 10:52:50 by codespace         #+#    #+#             */
+/*   Updated: 2024/08/04 11:09:12 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_memset(void *s, int c, size_t n)
+
+void ft_bzero(void *s, size_t n)
 {
     unsigned char *p;
-    unsigned char fill;
-
+    
     p = (unsigned char *)s;
-    fill = c;
     while (n > 0)
     {
-        *p = fill;
+        *p = '\0';
         p++;
         n--;
     }
-    return (s);
 }
 
 // #include <stdio.h>
-// int main()
+// //#include <string.h>
+// int main(void)
 // {
 //     char array[24] = "Iam Afnan Farid Shaheen";
-//     int i;
+//     int i = 0;
     
-//     i = 0;
-//     ft_memset(array + 4, '-', 5);
-
-//    while( i < 24)
+//     ft_bzero(array + 4, 5);
+//     //bzero(array + 4, 5);
+//     while (i < 24)
 //     {
-//         printf("%c ", array[i]);
+//         printf("%c", array[i]);
 //         i++;
 //     }
 //     printf("\n");
-
-//     return 0;
+//     return (0);
 // }
-
-
