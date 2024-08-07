@@ -6,12 +6,12 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/04 09:23:44 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/04 10:52:21 by codespace        ###   ########.fr       */
+/*   Updated: 2024/08/07 18:31:39 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *ft_memset(void *s, int c, size_t n)
+void    *ft_memset(void *s, int c, size_t n)
 {
     unsigned char *p;
     unsigned char fill;

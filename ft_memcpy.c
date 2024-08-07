@@ -1,44 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/04 10:52:50 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/07 18:31:58 by codespace        ###   ########.fr       */
+/*   Created: 2024/08/07 16:07:49 by codespace         #+#    #+#             */
+/*   Updated: 2024/08/07 18:31:49 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void    ft_bzero(void *s, size_t n)
+void    *ft_memcpy(void *dest, const void *src, size_t n)
 {
-    unsigned char *p;
+    unsigned const char   *s;
+    unsigned char   *d;
+    size_t    i;
     
-    p = (unsigned char *)s;
-    while (n > 0)
+    s = (unsigned const char *)src;
+    d = (unsigned char *)dest;
+    i = 0;
+    while (i < n)
     {
-        *p = '\0';
-        p++;
-        n--;
+        d[i] = s[i];
+        i++;
     }
+    return (dest);
 }
 
 // #include <stdio.h>
-// //#include <string.h>
-// int main(void)
+// int main()
 // {
-//     char array[24] = "Iam Afnan Farid Shaheen";
-//     int i = 0;
-    
-//     ft_bzero(array + 4, 5);
-//     //bzero(array + 4, 5);
-//     while (i < 24)
-//     {
-//         printf("%c", array[i]);
-//         i++;
-//     }
-//     printf("\n");
+//     char src[30] = "Iam Afnan Shaheen";
+//     char dest[30] = "Farid";
+//     size_t n = 5;
+
+//     ft_memcpy(dest, src, n);
+//     printf("%s", dest);
+  
 //     return (0);
 // }
