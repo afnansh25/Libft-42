@@ -1,35 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strchr copy.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/17 19:18:47 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/21 17:39:50 by codespace        ###   ########.fr       */
+/*   Updated: 2024/08/21 17:33:44 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-char    *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    //size_t  i;
-    //unsigned const char *str;
-    unsigned char   letter;
-
-    //i = 0;
-    //str = (unsigned const char *)s;
-    letter = (unsigned char)c;
-    while (*s)
-    {
-        if (*s == letter)
-            return (char *)s;
-        //i++;
-    }
-    if (letter == '\0')
-        return (char *)s;
-    return (NULL);
+	while (*s != (unsigned char)c)
+		if (!*s++)
+			return (0);
+	return ((char *)s);
 }
 
 #include <stdio.h>
