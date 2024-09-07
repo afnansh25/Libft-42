@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 06:20:47 by codespace         #+#    #+#             */
-/*   Updated: 2024/09/01 08:42:32 by codespace        ###   ########.fr       */
+/*   Updated: 2024/09/07 11:40:21 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,45 +32,5 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
         sstr[i++] = s[start++];
     }
     sstr[i] = '\0';
-    return (char *)sstr;
-    
+    return (char *)sstr; 
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     // Test 1: Extract substring from the middle
-//     char *s = "Hello, World!";
-//     char *substr = ft_substr(s, 7, 5);
-//     if (substr)
-//     {
-//         printf("Substring: %s\n", substr);  // Expected: "World"
-//         free(substr);
-//     }
-
-//     // Test 2: Extract substring starting at 0
-//     substr = ft_substr(s, 0, 5);
-//     if (substr)
-//     {
-//         printf("Substring: %s\n", substr);  // Expected: "Hello"
-//         free(substr);
-//     }
-
-//     // Test 3: Start index out of bounds
-//     substr = ft_substr(s, 20, 5);
-//     if (substr)
-//     {
-//         printf("Substring: %s\n", substr);  // Expected: ""
-//         free(substr);
-//     }
-
-//     // Test 4: Length exceeds the remaining length of the string
-//     substr = ft_substr(s, 7, 50);
-//     if (substr)
-//     {
-//         printf("Substring: %s\n", substr);  // Expected: "World!"
-//         free(substr);
-//     }
-
-//     return 0;
-// }
