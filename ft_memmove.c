@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/07 18:07:31 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/07 18:31:44 by codespace        ###   ########.fr       */
+/*   Updated: 2024/09/21 13:58:51 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,3 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
     }
     return (dest);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char src[30] = "Iam Afnan Shaheen";
-//     char dest[30] = "Farid";
-//     size_t n = 5;
-
-//     ft_memmove(dest, src, n);
-//     printf("%s\n", dest);
-  
-//     return (0);
-// }

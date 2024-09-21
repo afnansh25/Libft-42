@@ -6,11 +6,10 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 14:41:38 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/25 12:53:16 by codespace        ###   ########.fr       */
+/*   Updated: 2024/09/21 14:00:41 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stddef.h>
 #include "libft.h"
 
 char    *ft_strnstr(const char *haystack, const char *needle, size_t n)
@@ -40,27 +39,3 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t n)
     }
     return (NULL);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     // Test cases
-//     char *haystack = "Hello, World!";
-//     char *needle = "World";
-    
-//     // Test 1: Needle found within the first n characters
-//     char *result = ft_strnstr(haystack, needle, 13);
-//     printf("Found 'World': %s\n", result);  // Expected: "World!"
-    
-//     // Test 2: Needle not found within the first n characters
-//     result = ft_strnstr(haystack, needle, 11);
-//     printf("Not found 'World': %p\n", result);  // Expected: (nil) or NULL
-    
-//     // Test 3: Needle is an empty string
-//     result = ft_strnstr(haystack, "", 5);
-//     printf("Empty needle: %s\n", result);  // Expected: "Hello, World!"
-    
-//     return 0;
-// }

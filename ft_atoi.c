@@ -6,12 +6,11 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/25 12:55:49 by codespace         #+#    #+#             */
-/*   Updated: 2024/08/25 13:12:39 by codespace        ###   ########.fr       */
+/*   Updated: 2024/09/21 13:57:15 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #incldue "libft.h"
-//#include <stddef.h>
 
 int ft_atoi(const char *str)
 {
@@ -38,24 +37,3 @@ int ft_atoi(const char *str)
     }
     return (result * sign);
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     // Test cases
-//     char *str1 = "12345";
-//     char *str2 = "   -6789";
-//     char *str3 = "42 is the answer";
-//     char *str4 = "abc123";
-//     char *str5 = "  +-+987";
-    
-//     printf("Test 1: %d\n", ft_atoi(str1));  // Expected: 12345
-//     printf("Test 2: %d\n", ft_atoi(str2));  // Expected: -6789
-//     printf("Test 3: %d\n", ft_atoi(str3));  // Expected: 42
-//     printf("Test 4: %d\n", ft_atoi(str4));  // Expected: 0
-//     printf("Test 5: %d\n", ft_atoi(str5));  // Expected: 0
-    
-//     return 0;
-// }
-
